@@ -14,4 +14,7 @@
 
 [init]
         defaultBranch = main
+	templatedir = /home/dkroell/.git-template
 
+[core]
+	editor = vim
