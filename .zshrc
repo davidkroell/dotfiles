@@ -29,6 +29,7 @@ alias ll='ls -lah'
 alias bat=batcat
 alias pping=prettyping
 alias cat=bat
+alias talisman=/home/dkroell/.talisman/bin/talisman_linux_amd64
 
 # FUNCTIONS
 mkcd() {
@@ -43,6 +44,7 @@ mkcd() {
 
 # CHARACTER SET
 export LC_ALL=en_US.UTF-8
+export TALISMAN_HOME=/home/dkroell/.talisman/bin
 
 
 
