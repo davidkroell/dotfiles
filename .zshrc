@@ -26,9 +26,8 @@ source $ZSH/oh-my-zsh.sh
 
 # ALIASES
 alias ll='ls -lah'
-alias bat=batcat
 alias pping=prettyping
-alias cat=bat
+alias cat=batcat
 alias talisman=/home/dkroell/.talisman/bin/talisman_linux_amd64
 
 # FUNCTIONS
@@ -45,6 +44,4 @@ mkcd() {
 # CHARACTER SET
 export LC_ALL=en_US.UTF-8
 export TALISMAN_HOME=/home/dkroell/.talisman/bin
-
-
 
