@@ -45,3 +45,6 @@ mkcd() {
 export LC_ALL=en_US.UTF-8
 export TALISMAN_HOME=/home/dkroell/.talisman/bin
 
+
+# extend path
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
