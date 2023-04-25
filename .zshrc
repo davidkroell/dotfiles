@@ -37,6 +37,11 @@ mkcd() {
   cd -P -- "$1"
 }
 
+weather() {
+    # SHOW THE WEATHER REPORT
+    curl https://v2.wttr.in/"$@" | less
+}
+
 # ------------------------------
 #   ENVIRONMENT VARIABLES
 # ------------------------------
