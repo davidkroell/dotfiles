@@ -1,7 +1,7 @@
 [user]
         signingkey = 1CDD63E24FE303BBAF6C504C1FF05B6156D877AD
         name = David Kröll
-        email = dkroell@anexia-it.com
+        email = david.kroell@student.tugraz.at
 
 [gpg]
         program = gpg

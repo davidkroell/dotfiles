@@ -8,7 +8,7 @@ fi
 
 
 echo "Installing default programs"
-PROGRAMS="zsh clang clang-format clang-tools gcc cloc glibc-doc git bat awscli nmap tree valgrind"
+PROGRAMS="curl zsh cloc bat nmap tree fzf direnv"
 
 apt install -y $PROGRAMS 
 
@@ -19,4 +19,7 @@ chsh -s $(which zsh)
 echo "Install oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo "install starship"
+
+curl -sS https://starship.rs/install.sh | sh
 
