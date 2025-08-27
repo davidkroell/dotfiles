@@ -5,6 +5,9 @@
 # ZSH PATH
 export ZSH="$HOME/.oh-my-zsh"
 
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+
 CASE_SENSITIVE="false"              # case auto-correction
 HYPHEN_INSENSITIVE="true"           # hypen auto-correction
 HIST_STAMPS="yyyy-mm-dd"            # command execution time stamp shown in the history command output
@@ -29,6 +32,7 @@ alias ll='ls -lah'
 alias pping=prettyping
 alias cat=batcat
 alias talisman=/home/dkroell/.talisman/bin/talisman_linux_amd64
+alias k=kubectl
 
 # FUNCTIONS
 mkcd() {
