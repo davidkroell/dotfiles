@@ -16,12 +16,16 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' frequency 7    # auto-update every week
 
 # PLUGINS
-plugins=(direnv fzf ssh-agent zsh-autosuggestions docker)
+plugins=(direnv fzf ssh-agent zsh-autosuggestions docker kubectl)
 
 # STARSHIP
 eval "$(starship init zsh)"
 
 source $ZSH/oh-my-zsh.sh
+
+# completions
+source <(kubectl completion zsh)
+source <(kubebuilder completion zsh) 
 
 # ------------------------------
 #   ALIASES & FUNCTIONS
@@ -32,7 +36,6 @@ alias ll='ls -lah'
 alias pping=prettyping
 alias cat=batcat
 alias talisman=/home/dkroell/.talisman/bin/talisman_linux_amd64
-alias k=kubectl
 
 # FUNCTIONS
 mkcd() {
