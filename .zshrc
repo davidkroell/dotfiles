@@ -25,7 +25,6 @@ source $ZSH/oh-my-zsh.sh
 
 # completions
 source <(kubectl completion zsh)
-source <(kubebuilder completion zsh) 
 
 # ------------------------------
 #   ALIASES & FUNCTIONS
