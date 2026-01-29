@@ -25,6 +25,7 @@ source $ZSH/oh-my-zsh.sh
 
 # completions
 source <(kubectl completion zsh)
+source <(flux completion zsh)
 
 # ------------------------------
 #   ALIASES & FUNCTIONS
@@ -35,6 +36,7 @@ alias ll='ls -lah'
 alias pping=prettyping
 alias cat=batcat
 alias talisman=/home/dkroell/.talisman/bin/talisman_linux_amd64
+alias ctx=kubectx
 
 # FUNCTIONS
 mkcd() {
@@ -46,6 +48,14 @@ mkcd() {
 weather() {
     # SHOW THE WEATHER REPORT
     curl https://v2.wttr.in/"$@" | less
+}
+
+led() {
+    if [[ "$1" == "on" || "$1" == "off" ]]; then
+        magic-home state 192.168.0.61 "$1"
+    else
+        echo "Usage: led [on|off]"
+    fi
 }
 
 # ------------------------------

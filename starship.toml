@@ -5,7 +5,13 @@ full_symbol = "🔋"
 charging_symbol = "🔌"
 discharging_symbol = "⚡"
 
-[character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[✗](bold red)"
+#[character]
+#success_symbol = "[➜](bold green)"
+#error_symbol = "[✗](bold red)"
+
+[kubernetes]
+symbol = "⎈ "
+format = "[$symbol$cluster]($style) "
+style = "bright-yellow"
+disabled = false
 
