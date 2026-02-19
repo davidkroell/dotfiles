@@ -58,6 +58,10 @@ led() {
     fi
 }
 
+engineid() {
+    uuidgen | tr -d -
+}
+
 # ------------------------------
 #   ENVIRONMENT VARIABLES
 # ------------------------------
@@ -69,3 +73,11 @@ export TALISMAN_HOME=/home/dkroell/.talisman/bin
 
 # extend path
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+
+
+
+# auto start tmux
+if [[ -z "$TMUX" ]] && [[ -z "$JETBRAINS" ]] && [[ -n "$PS1" ]]; then
+  tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+fi
+
